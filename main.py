@@ -233,7 +233,7 @@ def get_model_parallel_search_space(cfg: DictConfig) -> Dict[str, List]:
     return search_space
 
 
-@hydra.main(version_base="1.1", config_path="./", config_name="Mixtral_8x7b.yaml")
+@hydra.main(version_base="1.1", config_path="./", config_name="llama3.1-405b.yaml")
 def main(cfg: DictConfig):
     with open("memory_estimation.csv", "w", newline="") as csv_file:
         csv_writer = csv.writer(csv_file)
