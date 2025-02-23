@@ -6,4 +6,4 @@
 
 tasks:
   - init: pip install -r requirements.txt
-    command: python main.py --config-name llama3.1-405b.yaml +ngpus_range="[8, 128, 1024, 10240]"
+    command: python main.py --config-name llama3.1-70b.yaml +ngpus_range="[8, 128, 1024, 10240]"
